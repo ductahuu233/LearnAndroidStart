@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".activity.MainActivity2">
+
+    <TextView
+        android:id="@+id/tvWant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thứ bạn cần mua là : "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTenSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWant"
+        android:layout_centerInParent="true"
+        android:text=".... "
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_below="@+id/tvTenSanPham"
+        android:id="@+id/tvPrice"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hãy báo giá cho khách hàng : "
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giá"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/edtInput"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Báo giá"
+        android:layout_below="@+id/edtInput"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnSend"/>
+
+
+
+</RelativeLayout>

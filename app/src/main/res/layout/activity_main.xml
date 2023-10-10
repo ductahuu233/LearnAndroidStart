@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tvWant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn cần mua thứ gì"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập thứ bạn cần mua"
+        android:layout_below="@+id/tvWant"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/edtInputMua"/>
+
+    <TextView
+        android:layout_below="@+id/edtInputMua"
+        android:id="@+id/tvNotificationPrice"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sau khi bấm nút gửi hãy đợi báo giá"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:layout_below="@+id/tvNotificationPrice"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnSendGui"/>
+
+    <TextView
+        android:layout_below="@+id/btnSendGui"
+        android:id="@+id/tvBaoGia"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GIÁ SẢN PHẨM LÀ : "
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvPriceGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBaoGia"
+        android:layout_centerInParent="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
